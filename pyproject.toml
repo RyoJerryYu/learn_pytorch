@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "learn-torch"
+version = "0.1.0"
+description = ""
+authors = ["RyoJerryYu <tzl19961216@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+torch = {version = "^2.5.1+cu124", source = "torch_cu124"}
+torchvision = {version = "^0.20.1+cu124", source = "torch_cu124"}
+
+[[tool.poetry.source]]
+name = "torch_cu124"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
