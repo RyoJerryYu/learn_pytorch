@@ -10,6 +10,7 @@ package-mode = false
 python = ">=3.12,<3.13"
 torch = {version = "^2.5.1+cu124", source = "torch_cu124"}
 torchvision = {version = "^0.20.1+cu124", source = "torch_cu124"}
+pandas = "^2.2.3"
 
 [[tool.poetry.source]]
 name = "torch_cu124"
